@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Gaming Squad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="workspace">
+        <h1 id="title">Join Our Gaming Squad</h1>
+        <p id="description">Join the #1 Gaming Squad Today</p>
+
+        <form id="survey-form">
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label id="number-label" for="number">Age:</label>
+            <input type="number" id="number" name="age" min="13" max="120" placeholder="Enter your age">
+
+            <label for="dropdown">Select your gaming platform:</label>
+            <select id="dropdown" name="platform">
+                <option value="">Select an option</option>
+                <option value="pc">PC</option>
+                <option value="console">Console</option>
+                <option value="mobile">Mobile</option>
+            </select>
+
+            <fieldset>
+                <legend>Preferred gaming genre:</legend>
+                <input type="radio" id="fps" name="genre" value="fps">
+                <label for="fps">FPS</label>
+                <input type="radio" id="moba" name="genre" value="moba">
+                <label for="moba">MOBA</label>
+                <input type="radio" id="rpg" name="genre" value="rpg">
+                <label for="rpg">RPG</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Gaming accessories you own:</legend>
+                <input type="checkbox" id="headset" name="accessories" value="headset">
+                <label for="headset">Gaming Headset</label>
+                <input type="checkbox" id="mouse" name="accessories" value="mouse">
+                <label for="mouse">Gaming Mouse</label>
+                <input type="checkbox" id="keyboard" name="accessories" value="keyboard">
+                <label for="keyboard">Gaming Keyboard</label>
+            </fieldset>
+
+            <label for="comments">Additional comments:</label>
+            <textarea id="comments" name="comments" placeholder="Enter your comments here"></textarea>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>
+            No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+        </p>
+    </footer>
+</body>
+
+</html>
